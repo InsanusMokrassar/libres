@@ -1,7 +1,7 @@
 plugins {
     kotlin("jvm")
     id("java-gradle-plugin")
-    id("com.vanniktech.maven.publish")
+//    id("com.vanniktech.maven.publish")
 }
 
 version = property("VERSION_NAME").toString()
