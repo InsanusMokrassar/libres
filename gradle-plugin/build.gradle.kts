@@ -36,6 +36,7 @@ gradlePlugin {
 val libresVersion = tasks.register("libresVersion") {
     val outputDir = file("generated")
     inputs.property("version", version)
+    inputs.property("group", group)
     outputs.dir(outputDir)
 
     doFirst {
@@ -44,6 +45,7 @@ val libresVersion = tasks.register("libresVersion") {
             package io.github.skeptick.libres
             
             val VERSION = "${project.version}"
+            val GROUP = "${project.group}"
         """.trimIndent()
 
         val versionFile = file("$outputDir/io/github/skeptick/libres/Version.kt")
