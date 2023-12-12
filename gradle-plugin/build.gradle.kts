@@ -4,6 +4,7 @@ plugins {
 //    id("com.vanniktech.maven.publish")
 }
 
+group = property("GROUP").toString()
 version = property("VERSION_NAME").toString()
 
 kotlin {
