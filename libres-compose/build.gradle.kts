@@ -19,3 +19,5 @@ kotlin {
         }
     }
 }
+
+apply(from = "../publish.gradle")

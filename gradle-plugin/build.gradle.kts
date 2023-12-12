@@ -54,3 +54,5 @@ val libresVersion = tasks.register("libresVersion") {
 sourceSets.main.configure {
     kotlin.srcDir(libresVersion)
 }
+
+apply(from = "../publish.gradle")
